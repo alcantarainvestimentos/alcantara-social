@@ -59,6 +59,19 @@ def resolve():
         if iba:
             IG = iba["id"]
             return f"graph.facebook.com · página {pg.get('name')} · @{iba.get('username')}"
+    # 3) usuário do sistema: o ID da conta vem nos escopos do próprio token
+    r = _try("https://graph.facebook.com", "debug_token", {"input_token": TOKEN})
+    targets = []
+    for sc in ((r or {}).get("data", {}) or {}).get("granular_scopes", []):
+        if sc.get("scope") in ("instagram_content_publish", "instagram_basic"):
+            targets += [str(t) for t in sc.get("target_ids", [])]
+    for t in dict.fromkeys(targets):
+        info = _try("https://graph.facebook.com", t, {"fields": "username"})
+        if info and info.get("username"):
+            IG = t
+            return f"graph.facebook.com · usuário do sistema · @{info['username']}"
+    scopes = [s.get("scope") for s in ((r or {}).get("data", {}) or {}).get("granular_scopes", [])]
+    print(f"  escopos do token: {scopes} · alvos: {targets}")
     r = _try("https://graph.facebook.com", "me", {"fields": "id,name"})
     raise RuntimeError(f"não achei a conta do Instagram com este token (me = {r})")
 
