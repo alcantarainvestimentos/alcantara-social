@@ -29,6 +29,40 @@ API = f"{CFG['graph_host']}/{CFG['graph_version']}"
 IG = CFG["ig_user_id"]
 
 
+def _try(host, path, params):
+    global API
+    old = API
+    API = f"{host}/{CFG['graph_version']}"
+    try:
+        return graph("GET", path, params)
+    except RuntimeError as e:
+        print(f"  ({host}/{path}: {str(e)[:160]})")
+        API = old
+        return None
+
+
+def resolve():
+    """Descobre em qual endpoint o token funciona e qual é o ID da conta do Instagram."""
+    global API, IG
+    # 1) token do Login do Instagram -> graph.instagram.com
+    r = _try("https://graph.instagram.com", "me", {"fields": "user_id,username"})
+    if r and r.get("user_id"):
+        IG = str(r["user_id"])
+        return f"graph.instagram.com · @{r.get('username')}"
+    # 2) token do Login do Facebook / usuário do sistema -> graph.facebook.com
+    r = _try("https://graph.facebook.com", IG, {"fields": "username"})
+    if r and r.get("username"):
+        return f"graph.facebook.com · @{r.get('username')}"
+    r = _try("https://graph.facebook.com", "me/accounts", {"fields": "name,instagram_business_account{id,username}"})
+    for pg in (r or {}).get("data", []):
+        iba = pg.get("instagram_business_account")
+        if iba:
+            IG = iba["id"]
+            return f"graph.facebook.com · página {pg.get('name')} · @{iba.get('username')}"
+    r = _try("https://graph.facebook.com", "me", {"fields": "id,name"})
+    raise RuntimeError(f"não achei a conta do Instagram com este token (me = {r})")
+
+
 def graph(method, path, params):
     params = dict(params)
     params["access_token"] = TOKEN
@@ -94,12 +128,11 @@ def main():
     if not TOKEN:
         print("IG_TOKEN não configurado nos Secrets do repositório.")
         sys.exit(1)
+    where = resolve()
+    print(f"conta: {where} · id {IG}")
     if os.environ.get("MODO") == "testar":
-        info = graph("GET", IG, {"fields": "username,name,followers_count,media_count"})
         lim = graph("GET", f"{IG}/content_publishing_limit", {"fields": "quota_usage,config"})
-        print(f"OK: conectado como @{info.get('username')} ({info.get('name')}), "
-              f"{info.get('followers_count')} seguidores, {info.get('media_count')} posts.")
-        print(f"Limite de publicação: {json.dumps(lim.get('data', lim), ensure_ascii=False)}")
+        print(f"OK: conexão funcionando. Limite de publicação: {json.dumps(lim.get('data', lim), ensure_ascii=False)}")
         return
     now = datetime.now(timezone.utc)
     files = sorted((ROOT / "queue").glob("*.json"))
