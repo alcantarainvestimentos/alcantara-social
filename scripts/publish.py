@@ -94,6 +94,13 @@ def main():
     if not TOKEN:
         print("IG_TOKEN não configurado nos Secrets do repositório.")
         sys.exit(1)
+    if os.environ.get("MODO") == "testar":
+        info = graph("GET", IG, {"fields": "username,name,followers_count,media_count"})
+        lim = graph("GET", f"{IG}/content_publishing_limit", {"fields": "quota_usage,config"})
+        print(f"OK: conectado como @{info.get('username')} ({info.get('name')}), "
+              f"{info.get('followers_count')} seguidores, {info.get('media_count')} posts.")
+        print(f"Limite de publicação: {json.dumps(lim.get('data', lim), ensure_ascii=False)}")
+        return
     now = datetime.now(timezone.utc)
     files = sorted((ROOT / "queue").glob("*.json"))
     due = []

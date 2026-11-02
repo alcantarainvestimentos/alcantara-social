@@ -4,6 +4,12 @@ on:
   schedule:
     - cron: "*/15 * * * *"
   workflow_dispatch:
+    inputs:
+      modo:
+        description: "publicar = roda a fila normal; testar = só confere a conexão com o Instagram"
+        type: choice
+        options: [testar, publicar]
+        default: testar
 
 permissions:
   contents: write
@@ -25,6 +31,7 @@ jobs:
       - name: Publicar itens aprovados
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          MODO: ${{ github.event.inputs.modo || 'publicar' }}
         run: python3 scripts/publish.py
 
       - name: Salvar status da fila
