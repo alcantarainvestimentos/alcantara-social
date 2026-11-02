@@ -53,6 +53,11 @@ def resolve():
     r = _try("https://graph.facebook.com", IG, {"fields": "username"})
     if r and r.get("username"):
         return f"graph.facebook.com · @{r.get('username')}"
+    r = _try("https://graph.facebook.com", "me", {"fields": "name,instagram_business_account{id,username}"})
+    if r and r.get("instagram_business_account"):  # token de Página
+        iba = r["instagram_business_account"]
+        IG = iba["id"]
+        return f"graph.facebook.com · token da página {r.get('name')} · @{iba.get('username')}"
     r = _try("https://graph.facebook.com", "me/accounts", {"fields": "name,instagram_business_account{id,username}"})
     for pg in (r or {}).get("data", []):
         iba = pg.get("instagram_business_account")
