@@ -1,0 +1,17 @@
+{
+  "ig_user_id": "17841441826305014",
+  "graph_host": "https://graph.facebook.com",
+  "graph_version": "v26.0",
+  "raw_base": "https://raw.githubusercontent.com/alcantarainvestimentos/alcantara-social/main/",
+  "timezone": "America/Sao_Paulo",
+  "max_delay_hours": 6,
+  "max_attempts": 3,
+  "stories_slots": {
+    "radar": "08:00",
+    "noticia": "11:00",
+    "voce_sabia": "14:00",
+    "pergunta": "19:30"
+  },
+  "feed_slot": "12:00",
+  "feed_days": ["seg", "qua", "sex"]
+}

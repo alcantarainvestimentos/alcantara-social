@@ -1,0 +1,39 @@
+name: Publicar no Instagram
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Publicar itens aprovados
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+        run: python3 scripts/publish.py
+
+      - name: Salvar status da fila
+        run: |
+          if [ -n "$(git status --porcelain queue)" ]; then
+            git config user.name "Alcantara Social Bot"
+            git config user.email "contato@alcantarainvestimentos.com"
+            git add queue
+            git commit -m "Fila: status atualizado $(TZ=America/Sao_Paulo date +'%d/%m %Hh%M')"
+            git pull --rebase
+            git push
+          fi
