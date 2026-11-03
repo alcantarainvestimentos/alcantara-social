@@ -1,0 +1,30 @@
+name: Radar - verificar perfis
+
+on:
+  workflow_dispatch:
+  push:
+    paths: ["radar/perfis.json"]
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verificar perfis
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+        run: python3 scripts/radar_check.py
+      - name: Salvar resultado
+        run: |
+          git config user.name "Alcantara Social Bot"
+          git config user.email "contato@alcantarainvestimentos.com"
+          git add radar/perfis_check.json
+          git commit -m "Radar: verificação de perfis" || exit 0
+          git pull --rebase
+          git push
