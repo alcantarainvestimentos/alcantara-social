@@ -1,0 +1,509 @@
+{
+  "verificado_em": "2026-11-03T00:16:13.895771+00:00",
+  "perfis": [
+    {
+      "u": "infomoney",
+      "cat": "noticias",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "valoreconomico",
+      "cat": "noticias",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "exame",
+      "cat": "noticias",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "investnews",
+      "cat": "noticias",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "bloomberglineabrasil",
+      "cat": "noticias",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "moneytimesbr",
+      "cat": "noticias",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "braziljournal",
+      "cat": "noticias",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "seudinheiro",
+      "cat": "noticias",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "sunoresearch",
+      "cat": "noticias",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "einvestidor",
+      "cat": "noticias",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "forbesbr",
+      "cat": "noticias",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "neofeed",
+      "cat": "noticias",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "timesbrasil",
+      "cat": "noticias",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "cnnbrasilmoney",
+      "cat": "noticias",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "b3_oficial",
+      "cat": "mercado",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "b3trader_oficial",
+      "cat": "mercado",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "xpinvestimentos",
+      "cat": "mercado",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "btgpactual",
+      "cat": "mercado",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "clearcorretora",
+      "cat": "mercado",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "ricoinvestimentos",
+      "cat": "mercado",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "toroinvestimentos",
+      "cat": "mercado",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "nubank",
+      "cat": "mercado",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "bancointer",
+      "cat": "mercado",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "c6bank",
+      "cat": "mercado",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "anbima",
+      "cat": "mercado",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "tradersclub",
+      "cat": "mercado",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "farialima.elevator",
+      "cat": "mercado",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "portaldobitcoin",
+      "cat": "cripto",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "livecoins",
+      "cat": "cripto",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "cointelegraphbr",
+      "cat": "cripto",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "criptofacil",
+      "cat": "cripto",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "blocktrends",
+      "cat": "cripto",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "mercadobitcoin",
+      "cat": "cripto",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "foxbit",
+      "cat": "cripto",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "binance",
+      "cat": "cripto",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "binancebrasil",
+      "cat": "cripto",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "coinbase",
+      "cat": "cripto",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "bitso",
+      "cat": "cripto",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "ripio",
+      "cat": "cripto",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "novadax_br",
+      "cat": "cripto",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "hashdex",
+      "cat": "cripto",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "bitpreco",
+      "cat": "cripto",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "tassolago",
+      "cat": "cripto",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "augustobackes",
+      "cat": "cripto",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "danielazschaber",
+      "cat": "cripto",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "cryptotimes",
+      "cat": "cripto",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "bitcoinmagazine",
+      "cat": "cripto",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "cointelegraph",
+      "cat": "cripto",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "remessaonline",
+      "cat": "cambio",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "wise",
+      "cat": "cambio",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "nomadglobal",
+      "cat": "cambio",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "avenue.us",
+      "cat": "cambio",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "transferoswiss",
+      "cat": "cambio",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "braza.bank",
+      "cat": "cambio",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "fitbank",
+      "cat": "cambio",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "primorico",
+      "cat": "educacao",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "thiago.nigro",
+      "cat": "educacao",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "economistasincero",
+      "cat": "educacao",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "perini",
+      "cat": "educacao",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "vocemaisrico",
+      "cat": "educacao",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "nathaliaarcuri",
+      "cat": "educacao",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "mepoupe",
+      "cat": "educacao",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "nathfinancas",
+      "cat": "educacao",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "riquezaemdias",
+      "cat": "educacao",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "rafaelferri",
+      "cat": "educacao",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "tiagoreis",
+      "cat": "educacao",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "gustavocerbasi",
+      "cat": "educacao",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "ricardoamorim_ra",
+      "cat": "educacao",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "robertoguedes",
+      "cat": "educacao",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "hulisses",
+      "cat": "educacao",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "investidorsardinha",
+      "cat": "educacao",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "mafedafarialima",
+      "cat": "educacao",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "carlosmagno.ofc",
+      "cat": "educacao",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "elisiane.moreira",
+      "cat": "educacao",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "renatobreia",
+      "cat": "educacao",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "camilafarani",
+      "cat": "educacao",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "joelrjota",
+      "cat": "educacao",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "pauloportinho",
+      "cat": "educacao",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "favelado.investidor",
+      "cat": "educacao",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "irmaosdias",
+      "cat": "educacao",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "dicadehoje",
+      "cat": "educacao",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "papofinanceiro",
+      "cat": "educacao",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "finclass",
+      "cat": "educacao",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    },
+    {
+      "u": "empiricus",
+      "cat": "educacao",
+      "ok": false,
+      "erro": "HTTP 400 em 17841441826305014: {\"error\":{\"message\":\"(#10) Application does not have permission for this action\",\"type\":\"OAuthException\",\"code\":10,\"fbtrace_id\":\""
+    }
+  ]
+}
