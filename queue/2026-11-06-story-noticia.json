@@ -1,0 +1,14 @@
+{
+  "id": "2026-11-06-story-noticia",
+  "type": "story",
+  "slot": "noticia",
+  "summary": "Nubank e Mercado Pago suspendem saques e depósitos de cripto",
+  "media": [
+    "media/2026-11-06/story-noticia.png"
+  ],
+  "caption": "",
+  "publish_at": "2026-11-06T20:15:00-03:00",
+  "status": "aprovado",
+  "created_at": "2026-11-06T20:13:56.886920-03:00",
+  "reviewed_at": "2026-11-06T20:13:56.977353-03:00"
+}
