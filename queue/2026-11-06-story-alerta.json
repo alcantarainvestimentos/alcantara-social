@@ -1,0 +1,14 @@
+{
+  "id": "2026-11-06-story-alerta",
+  "type": "story",
+  "slot": "alerta",
+  "summary": "Mercado Bitcoin: saques seguem suspensos; reabertura em 9/11 só para consulta",
+  "media": [
+    "media/2026-11-06/story-alerta.png"
+  ],
+  "caption": "",
+  "publish_at": "2026-11-06T12:00:00-03:00",
+  "status": "aprovado",
+  "created_at": "2026-11-06T12:22:52.264328-03:00",
+  "reviewed_at": "2026-11-06T12:22:52.306933-03:00"
+}
