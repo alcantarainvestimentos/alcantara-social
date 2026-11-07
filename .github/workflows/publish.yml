@@ -23,6 +23,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Pegar a fila mais recente
+        # evita publicar de novo um item que outra execução acabou de publicar
+        run: git pull --ff-only origin main
 
       - uses: actions/setup-python@v5
         with:
