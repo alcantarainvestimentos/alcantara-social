@@ -135,8 +135,22 @@ def publish(item):
             children.append(ch["id"])
         c = graph("POST", f"{IG}/media", {"media_type": "CAROUSEL", "children": ",".join(children), "caption": caption})
         cid = c["id"]
+    elif kind == "reel":
+        p = {"media_type": "REELS", "video_url": url_for(media[0]), "caption": caption,
+             "share_to_feed": "true"}
+        if item.get("cover"):
+            p["cover_url"] = url_for(item["cover"])
+        if item.get("collaborators"):
+            p["collaborators"] = json.dumps(item["collaborators"])
+        c = graph("POST", f"{IG}/media", p)
+        cid = c["id"]
+        wait_ready(cid, tries=60)
+        res = graph("POST", f"{IG}/media_publish", {"creation_id": cid})
+        return res["id"]
     else:
         raise RuntimeError(f"tipo desconhecido: {kind}")
+    if kind in ("feed", "carousel") and item.get("collaborators"):
+        pass  # colaboradores só suportados aqui em reels
     wait_ready(cid)
     res = graph("POST", f"{IG}/media_publish", {"creation_id": cid})
     return res["id"]

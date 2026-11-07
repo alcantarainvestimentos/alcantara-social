@@ -23,8 +23,10 @@ CFG = json.loads((ROOT / "config.json").read_text(encoding="utf-8"))
 p = argparse.ArgumentParser()
 p.add_argument("--date", required=True, help="AAAA-MM-DD")
 p.add_argument("--slot", required=True, help="radar | noticia | voce_sabia | pergunta | feed | outro nome")
-p.add_argument("--type", required=True, choices=["story", "feed", "carousel"])
-p.add_argument("--image", action="append", required=True)
+p.add_argument("--type", required=True, choices=["story", "feed", "carousel", "reel"])
+p.add_argument("--image", action="append", required=True, help="imagem (ou o vídeo .mp4 quando --type reel)")
+p.add_argument("--cover", help="capa do reel (JPG/PNG), opcional")
+p.add_argument("--collab", action="append", default=[], help="@ de colaborador (reel), ex.: kaaka_alcantara")
 p.add_argument("--caption-file")
 p.add_argument("--time", help="HH:MM (substitui o horário do slot)")
 p.add_argument("--summary", default="", help="tema em uma linha, para a prévia")
@@ -43,11 +45,19 @@ mdir.mkdir(parents=True, exist_ok=True)
 rels = []
 for i, src in enumerate(a.image, 1):
     ext = Path(src).suffix.lower() or ".png"
-    if ext not in (".jpg", ".jpeg", ".png"):
-        raise SystemExit("imagem precisa ser JPG ou PNG")
+    ok = (".mp4", ".mov") if a.type == "reel" else (".jpg", ".jpeg", ".png")
+    if ext not in ok:
+        raise SystemExit(f"arquivo precisa ser {'/'.join(ok)}")
     name = f"{a.type}-{a.slot}" + (f"-{i:02d}" if len(a.image) > 1 else "") + ext
     shutil.copyfile(src, mdir / name)
     rels.append(f"media/{a.date}/{name}")
+
+cover = None
+if a.cover:
+    cext = Path(a.cover).suffix.lower()
+    cname = f"{a.type}-{a.slot}-capa{cext}"
+    shutil.copyfile(a.cover, mdir / cname)
+    cover = f"media/{a.date}/{cname}"
 
 item = {
     "id": item_id,
@@ -58,6 +68,8 @@ item = {
     "caption": Path(a.caption_file).read_text(encoding="utf-8").strip() if a.caption_file else "",
     "publish_at": at.isoformat(),
     "status": "rascunho",
+    **({"cover": cover} if cover else {}),
+    **({"collaborators": [c.lstrip("@") for c in a.collab]} if a.collab else {}),
     "created_at": datetime.now(ZoneInfo(CFG["timezone"])).isoformat(),
 }
 out = ROOT / "queue" / f"{item_id}.json"
